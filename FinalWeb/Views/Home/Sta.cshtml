@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Sta";
+}
+
+<h2>Check Status of orders and payment of agents</h2>
+
+<div>
+    <div class="row">
+        @Html.ActionLink("Details of Orders", "Index", "OrderDetails")
+        @Html.ActionLink("Status of Orders", "Index", "Orders")
+        @Html.ActionLink("Status of Payment for Agents", "Index", "Receipts")
+    </div>
+</div>

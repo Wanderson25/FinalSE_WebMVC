@@ -1,0 +1,50 @@
+﻿@model FinalWeb.Models.OrderDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>OrderDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Selling_Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Selling_Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Good.GoodsName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Good.GoodsName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
